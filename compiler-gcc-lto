@@ -1,7 +1,5 @@
-# $N refers to the amount of threads used during LTO, one option is to be set to the value of $(nproc)
-CFLAGS="-flto=32 -march=native -O2 -pipe"
+CFLAGS="-flto -march=native -O2 -pipe"
 CXXFLAGS="${CFLAGS}"
-LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 
 CC="gcc"
 CXX="g++"
