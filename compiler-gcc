@@ -1,6 +1,5 @@
 CFLAGS="-march=native -O2 -pipe"
 CXXFLAGS="${CFLAGS}"
-LDFLAGS="${LDFLAGS} -fuse-ld=mold"
 
 CC="gcc"
 CXX="g++"
