@@ -1,4 +1,4 @@
-CFLAGS="-flto -march=native -O2 -pipe"
+CFLAGS="-flto -march=native -O3 -pipe"
 CXXFLAGS="${CFLAGS}"
 
 CC="gcc"

@@ -1,0 +1,16 @@
+# Normal settings here
+COMMON_FLAGS="-O3 -march=native -pipe"
+CFLAGS="${COMMON_FLAGS}"
+CXXFLAGS="${COMMON_FLAGS}"
+
+CC="clang"
+CPP="clang-cpp"
+CXX="clang++"
+AR="llvm-ar"
+NM="llvm-nm"
+RANLIB="llvm-ranlib"
+
+BUILD_FIXES="LLVM=1 LLVM_IAS=1"
+
+# No need to set this, clang-common can handle this based on chosen USE flags
+#LDFLAGS="${LDFLAGS} -fuse-ld=lld -rtlib=compiler-rt -unwindlib=libunwind -Wl,--as-needed"
